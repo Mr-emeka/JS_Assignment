@@ -368,7 +368,7 @@ workersDetails.forEach(details => {
 let totalSalary = 0;
 workersDetails.forEach(details => {
      totalSalary += details.Salary;
-    
+
 });
 console.log(totalSalary)
 
