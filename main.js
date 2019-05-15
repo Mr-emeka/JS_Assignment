@@ -365,12 +365,12 @@ workersDetails.forEach(details => {
 
 // 2 (b).Print to the console the total salaries of all workers
 
-let averageSalary = 0;
+let totalSalary = 0;
 workersDetails.forEach(details => {
-     averageSalary += details.Salary;
-     averageSalary = averageSalary / 50;
+     totalSalary += details.Salary;
+    
 });
-console.log(averageSalary)
+console.log(totalSalary)
 
 // 2(c).Print to the console the average age of all workers
 let averageAge = 0;
