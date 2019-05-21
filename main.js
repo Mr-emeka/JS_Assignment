@@ -300,8 +300,8 @@ const workersDetails = [{
           firstName: "Chelsea",
           lastName: "Holmes",
           Gender: "Female",
-          Age: "21",
-          Salary: "32690"
+          Age: 21,
+          Salary: 32690
      },
      {
           firstName: "Alberta",
@@ -356,12 +356,36 @@ const workersDetails = [{
 
 //2 Use for loop to iterate over the array of objects.....
 
-// 2(a).Print to the console the firstname and lastname of the all workers
+// for (let i = 0; i < workersDetails.length; i++) {
+//      console.log(workersDetails[i].firstName);
+// }
 
+// 2(a).Print to the console the firstname and lastname of the all workers
 workersDetails.forEach(details => {
      console.log(`${details.firstName} ${details.lastName}`);
 
 });
+
+
+// for (let i = 0; i < workersDetails.length; i++) {
+//      console.log(workersDetails[i].firstName + " " + workersDetails[i].lastName);
+
+// }
+
+// let total = 0;
+
+// for (let i = 0; i < workersDetails.length; i++) {
+
+//      // workersDetails[i].Salary;
+
+//      total += workersDetails[i].Salary
+// }
+// console.log(total);
+
+
+
+
+
 
 // 2 (b).Print to the console the total salaries of all workers
 
@@ -376,7 +400,7 @@ console.log(totalSalary)
 let averageAge = 0;
 workersDetails.forEach(details => {
      averageAge += details.Age;
-     averageAge = averageAge / 50;
+     averageAge = averageAge / workersDetails.length;
 });
 console.log(averageAge)
 
